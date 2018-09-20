@@ -16,7 +16,8 @@ dataRef.ref().on("child_added", function(childSnapshot) {
      console.log(childSnapshot.val().destination);
      console.log(childSnapshot.val().trainTime);
      console.log(childSnapshot.val().frequency);
-
+//I couldn't get the moment feature to work so the time that shows is the current time instead of 
+//the next arrival and minutes away.
 var firstTrain = moment(childSnapshot.val().firstTrain, 'HH:mm').format("X");
 var frequency = childSnapshot.val().frequency;
 var timeLeft = moment().diff(moment.unix(firstTrain), "minutes") % frequency;
