@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Time</title>
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase-database.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <div class="start">
+        <div class="img1"><img src="https://media.giphy.com/media/C5AAnWx5HuePe/giphy.gif"></div>
+            
+        <p class="name">Tony's Train Station</p>
+        <p class="name">Ride At Own Risk!</p>
+        <div class="img2"><img src="https://media.giphy.com/media/C5AAnWx5HuePe/giphy.gif"></div>
+    </div>
+    <br>
+    
+    <br>
+    <h1 class="display-4">Train Schedule</h1>
+    <div class="line"></div>
+    <br>
+    <div class="line2"></div>
+    <div class="container">
+
+        
+        
+        <br>
+        <div class="line2"></div>
+        <br>
+        <div class="titles">
+    
+       <table>
+           <thead>
+           <tr>
+               <th><strong>Train Name</strong></th>
+               <th><strong>Destination</strong></th>
+               <th><strong>Frequency (min)</strong></th>
+               <th><strong>Next Arrival</strong></th>
+               <th><strong>Minutes Away</strong></th>
+           </tr>
+           </thead>
+           <br>
+           <tbody id="trainInformation"></tbody>
+           </table>
+        </div>
+           
+       
+    <br>  
+<br>
+           <div class="line2"></div>
+           
+        </div>
+       
+        
+        
+        <br>
+       
+
+        </div>
+        <div class="line2"></div>
+        <br>
+        <div class="line"></div>
+    </div>
+
+    <br>
+
+
+    </div>
+    <br>
+    <br>
+    <div class="container2">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputTrainName"><b>Train Name</b></label>
+                <input type="train-name" class="form-control" id="trainNameInput" placeholder="Enter Train Name">
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputDestination"><b>Destination</b></label>
+                <input type="destination" class="form-control" id="destinationInput" placeholder="Destination">
+            </div><
+            <div class="form-group">
+
+                <label for="firstTrainTime"><b>First Train Time (HH:mm - military time)</b></label>
+                <div class="form1">
+                    <input type="time" class="form-control" id="timeInput" placeholder="Time">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFrequency"><b>Frequency (min)</b></label>
+                <input type="frequency" class="form-control" id="frequencyInput" placeholder="Frequency">
+            </div>
+
+
+            <button type="submit" class="btn btn-primary" id="add-user">Submit</button>
+        </form>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="assets/main.js"></script>
+
+</body>
+
+</html>
